@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    background-color: #9bcbf1;
+    scroll-behavior: smooth; 
+}
+.text{
+    color:rgb(32, 84, 3);
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: rgb(14, 53, 64);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 50px;
+    color: rgb(42, 194, 183);
+    font-weight: 550;
+}
+
+.navbar a {
+    font-size: 25px;
+    color: black;
+    text-decoration: underline;
+    font-weight: 500;
+    margin-left: 32px;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: steelblue;
+}
+
+section {
+    padding: 70px 10%;
+    min-height: 100vh;
+}
+
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image {
+    width: 300px;
+    height: 300px;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.home-content {
+    max-width: 600px;
+}
+
+.home-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.home-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3px 0;
+}
+
+.home-content p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.home-sci a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid pink;
+    border-radius: 50%;
+    font-size: 20px;
+    color: black;
+    margin: 20px 15px 0 0;
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+.home-sci a:hover {
+    background: wheat;
+    box-shadow: 0 0 20px purple;
+}
+
+.btn-box {
+    display: inline-block;
+    padding: 15px 28px;
+    background: yellow;
+    border-radius: 40px;
+    font-size: 16px;
+    color: black;
+    font-weight: 650;
+    margin-top: 20px;
+    transition: box-shadow 0.3s;
+}
+
+.btn-box:hover {
+    box-shadow: 0 0 5px orange, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 200px cyan;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.about-img img {
+    width: 50%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.about-text h2 {
+    font-size: 60px;
+}
+
+.about-text h2 span {
+    color:orange;
+}
+
+.about-text h4 {
+    font-size: 35px;
+}
+
+.about-text p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.sub-title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-decoration:underline;
+    font-style: italic;
+}
+
+.sub-title span {
+    color:rgb(199, 28, 142);
+}
+
+.sub-title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 50px; 
+      margin-bottom: 30px; 
+}
+.skills-container {
+    display: flex;  
+    justify-content: space-between; 
+    align-items: flex-start;  
+    gap: 50px; 
+    padding: 20px 0; 
+}
+
+.container1, .container2 {
+    flex: 1;
+}
+
+.container1 h1, .container2 h1 {
+    text-align: center;  
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.container1 div, .container2 div {
+    padding: 10px;
+    background: #f0f0f0; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.container1 div progress, .container2 div div {
+    margin-bottom: 10px; 
+}
+
+.container2 div div {
+    background: #f8d7da;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 10%;
+}
+
+.contact-text {
+    max-width: 600px;
+}
+
+.contact-text h2 {
+    font-size: 60px;
+}
+
+.contact-text h2 span {
+    color: rgb(255, 0, 0);
+}
+
+.contact-text h4 {
+    font-size: 35px;
+}
+
+.contact-text p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.contact-list li {
+    font-size: 20px;
+    margin-top: 10px;
+    list-style: none;
+}
+
+.contact-list li i {
+    color: orangered;
+    margin-right: 10px;
+}
+
+.contact-icons a {
+    display: inline-block;
+    font-size: 40px;
+    color: orangered;
+    margin: 20px 15px 0 0;
+    transition: color 0.3s;
+}
+
+.contact-icons a:hover {
+    color: cyan;
+}
+
+.contact-form form {
+    display: grid;
+    gap: 10px;
+}
+
+.contact-form input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact-form .send {
+    background-color: yellowgreen;
+    border: none;
+    color: black;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact-form .send:hover {
+    background-color: green;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: yellowgreen;
+    color: black;
+}
+
+.last-one {
+    font-size: 20px;
+}
